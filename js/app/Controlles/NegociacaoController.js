@@ -15,4 +15,12 @@ class NegociacaoController{
         );
 
     }
+
+    _LimparFormulario()
+    {
+        this._inputData.value='';
+        this._inputQuantidade.value = '';
+        this._inputValor.value=0.0;
+        this._inputData.focus();
+    }
 }
