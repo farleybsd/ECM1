@@ -7,6 +7,14 @@ class NegociacaoController{
         this._inputValor = $("valor");
     }
 
+    adiciona(evenet){
+        // desativa o comportamento default do objeto
+        evenet.preventDefault();
+        //Funcao adicionar no Modelo de negociacoes
+        
+
+    }
+
     _criaNegociacao(){
         return new Negociacao(
             DateHelper.textoParaData(this._inputData.value),
