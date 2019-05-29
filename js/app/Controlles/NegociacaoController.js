@@ -10,7 +10,7 @@ class NegociacaoController{
     _criaNegociacao(){
         return new Negociacao(
             DateHelper.textoParaData(this._inputData.value),
-            this._inputData.value,
+            this._inputQuantidade.value,
             this._inputValor.value
         );
 
